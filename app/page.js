@@ -1,9 +1,13 @@
+import Link from "next/link";
+
 export default function Home() {
+  console.log("어디에서 출력될까?");
   return (
     <main>
-      <img src="/logo.png" alt="A server surrounded by magic sparkles." />
-      <h1>Welcome to this NextJS Course!</h1>
-      <p>🔥 Let&apos;s get started! 🔥</p>
+      NextJS 시작하기
+      <p>
+        <Link href="/new">NEW</Link>
+      </p>
     </main>
   );
 }
